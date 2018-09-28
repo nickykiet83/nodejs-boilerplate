@@ -21,6 +21,6 @@ app.use(mainRoutes);
 
 app.listen(secret.port, (err) => {
   if (err) throw err;
-  console.log(`Server is Runnig at port: ${secret.port}`);
+  console.log(`Server is Running at port: ${secret.port}`);
 })
 
