@@ -1,5 +1,5 @@
 module.exports = {
-  database: '<YOUR-CONNECTION-STRING>',
+  database: 'mongodb://localhost/playground',
   port: 3000,
-  secretKey: '<YOUR-SECRET-KEY>'
+  secretKey: 'KietPham@TuPham'
 }

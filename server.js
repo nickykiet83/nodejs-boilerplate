@@ -2,7 +2,16 @@ var express = require('express');
 var bodyParser = require('body-parser');
 var secret = require('./config/secret');
 var engine = require('ejs-mate');
+var mongoose = require('mongoose');
 var app = express();
+
+mongoose.connect(secret.database, { useNewUrlParser: true }, function (err) {
+  if (err) {
+    console.log(err);
+  } else {
+    console.log("Connected to the database");
+  }
+});
 
 //middleware
 app.use(express.static(__dirname + '/public'));
